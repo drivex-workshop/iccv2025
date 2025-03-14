@@ -1,0 +1,1186 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="DriveX">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>DriveX - Foundation Models for V2X-based Cooperative Autonomous Driving 🚗 </title>
+    <link rel="stylesheet" href="./static/css/bulma.min.css">
+    <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+    <link rel="stylesheet" href="./static/css/index.css">
+    <link rel="icon" href="./static/images/favicon.svg">
+    <link rel="stylesheet" href="css/style.css"> <!-- Resource style -->
+    <script src="js/modernizr.js"></script> <!-- Modernizr -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script defer src="./static/js/fontawesome.all.min.js"></script>
+
+</head>
+
+<body>
+
+<section class="hero">
+    <div class="hero-body" style="background-image: url(./static/img/header.jpg); background-size: cover;">
+        <div class="container is-max-desktop">
+            <div class="columns is-centered">
+                <div class="column">
+                    <h1 class="title is-1" style="color: white">DriveX 🚗 (2nd Edition)</h1>
+                    <p class="title is-4" style="color: white">Workshop on Foundation Models for</p>
+                    <p class="title is-4" style="color: white">V2X-Based Cooperative Autonomous Driving</p>
+                    <h1 class="is-is-5" style="color: white">In conjunction with ICCV 2025, October 19 in Honolulu, Hawai'i, USA (unter review)</h1>
+                    <!-- <b style="color: white"> Sunday 08:00 - 17:30 - Room: Amber 4</b> -->
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section>
+    <div class="container is-max-desktop">
+        <div class="hero-body">
+            <h2 class="subtitle has-text-centered">
+                <a href="#schedule" class="button">Schedule</a>
+                <a href="#speakers" class="button">Speakers</a>
+                <!--          <a href="#papers" class="button">Papers</a>-->
+                <a href="#paper_track" class="button">Paper Track</a>
+                <a href="#challenge" class="button">Challenge</a>
+                <a href="#organizers" class="button">Organizers</a>
+                <a href="#PC" class="button">Programm Committee</a>
+                <!--          <div class="dropdown">-->
+                <!--            <span class="button">Prior Editions &nbsp;<i class="fa fa-chevron-down" aria-hidden="true"></i></span>-->
+                <!--            <div class="dropdown-content">-->
+                <!--              <a href="index.html">CVPR 2025</a><br />-->
+                <!--              <a href="index_cvpr24.html">CVPR 2024</a><br />-->
+                <!--            </div>-->
+                <!--          </div>-->
+            </h2>
+
+        </div>
+    </div>
+</section>
+
+<section class="section" id="Motivation">
+    <div class="container is-max-desktop content">
+        <h2 class="title">Introduction</h2>
+        <div class="content has-text-justified">
+            The 2nd Edition of our DriveX Workshop explores the integration of foundation models and V2X-based cooperative systems to
+            improve perception, planning, and decision-making in autonomous vehicles.
+            While traditional single-vehicle systems have advanced tasks like 3D object detection, emerging challenges
+            like holistic scene understanding and 3D occupancy prediction require more comprehensive solutions.
+            Collaborative driving systems, utilizing V2X communication and roadside infrastructure, extend sensory
+            range, provide hazard warnings, and improve decision-making through shared data.
+            Simultaneously, foundation models like Vision-Language Models (VLMs) offer generalization abilities,
+            enabling zero-shot learning, open-vocabulary recognition, and scene explanation for novel scenarios.
+            Recent advancements in end-to-end systems and foundation models like DriveLLM further enhance autonomous
+            systems.
+            The workshop aims to bring together experts to explore these technologies, address challenges, and advance
+            road safety.
+        </div>
+        <h2 class="title">Topics</h2>
+        <div class="content has-text-justified">
+            <ul>
+                <li>Foundation Models for Cooperative Autonomous Driving and Intelligent Transportation Systems</li>
+                <li>Vision-Language Models (VLMs) for Traffic Scene Understanding</li>
+                <li>Large Language Model (LLM)-assisted Cooperative Systems</li>
+                <li>Cooperative Perception & V2X communication for Autonomous Vehicles</li>
+                <li>Dataset Curation and Data Labeling for Autonomous Driving</li>
+                <li>Datasets and Benchmarks for Foundation Models and Cooperative Perception</li>
+                <li>3D Occupancy Prediction, 3D Object Detection, 3D Semantic Segmentation, and 3D Scene Understanding</li>
+                <li>End-to-end Perception and Real-time Decision-Making Systems</li>
+                <li>Vehicle-to-Infrastructure (V2I) Interaction</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<section class="section" id="schedule">
+    <div class="container is-max-desktop content">
+        <h2 class="title">Schedule</h2>
+        <div class="content has-text-justified">
+            <table class="table table-striped">
+                <tr style="background-color: #fffddb">
+                    <td width="130">08:30 - 08:50</td>
+                    <td>Opening Remarks (Welcome & Introduction)</td>
+                </tr>
+                <tr style="background-color:#e4ffde">
+                    <td>08:30 - 08:50</td>
+                    <td>Keynote 1: <b>Speaker 1</b> 
+                    </td>
+                </tr>
+                <tr style="background-color:#e4ffde">
+                    <td>08:50 - 09:10</td>
+                    <td>Keynote 2: <b>Speaker 2</b> 
+                    </td>
+                </tr>
+                <tr style="background-color:#e4ffde">
+                    <td>09:10 - 09:30</td>
+                    <td>Keynote 3: <b>Speaker 3</b> </td>
+                    </td>
+                </tr>
+                <tr style="background-color:#e4ffde">
+                    <td>09:30 - 09:50</td>
+                    <td>Keynote 4: <b>Speaker 4</b> 
+                </tr>
+                <tr style="background-color:#e4ffde">
+                    <td>09:50 - 10:10</td>
+                    <td>Keynote 5: <b>Speaker 5</b>
+                    </td>
+                </tr>
+                <tr style="background-color:#ffe7d3">
+                    <td>10:10 - 10:20</td>
+                    <td>Poster Session & Coffee Break</td>
+                </tr>
+                <tr style="background-color:#e4ffde">
+                    <td>10:20 - 10:40</td>
+                    <td>Keynote 6: <b>Speaker 6</b> 
+                    </td>
+                </tr>
+                <tr style="background-color:#e4ffde">
+                    <td>10:40 - 11:00</td>
+                    <td>Keynote 7: <b>Speaker 7</b>
+                    </td>
+                </tr>
+                <tr style="background-color:#e4ffde">
+                    <td>11:00 - 11:20</td>
+                    <td>Keynote 8: <b>Speaker 8</b>
+                    </td>
+                </tr>
+                <tr style="background-color:#DDDDDD">
+                    <td>11:20 - 12:00</td>
+                    <td>
+                        Panel Discussion I
+                    </td>
+                </tr>
+                <tr style="background-color:#ffe7d3">
+                    <td>12:00 - 13:00</td>
+                    <td>
+                        Lunch Break
+                    </td>
+                </tr>
+                <tr style="background-color:#e4ffde">
+                    <td>13:00 - 13:20</td>
+                    <td>Keynote 9: <b>Speaker 9</b>
+                    </td>
+                </tr>
+                <tr style="background-color:#e4ffde">
+                    <td>13:20 - 13:40</td>
+                    <td>Keynote 10: <b>Speaker 10</b>
+                    </td>
+                </tr>
+                <tr style="background-color:#e4ffde">
+                    <td>13:40 - 14:00</td>
+                    <td>Keynote 11: <b>Speaker 11</b>
+                    </td>
+                </tr>
+                <tr style="background-color:#e4ffde">
+                    <td>14:00 - 14:20</td>
+                    <td>Keynote 12: <b>Speaker 12</b>
+                    </td>
+                </tr>
+                <tr style="background-color:#e4ffde">
+                    <td>14:20 - 14:40</td>
+                    <td>Keynote 13: <b>Speaker 13</b>
+                    </td>
+                </tr>
+                <tr style="background-color:#e4ffde">
+                    <td>14:40 - 15:00</td>
+                    <td>Keynote 14: <b>Speaker 14</b>
+                    </td>
+                </tr>
+                <tr style="background-color:#e4ffde">
+                    <td>15:00 - 15:20</td>
+                    <td>Keynote 15: <b>Speaker 15</b>
+                    </td>
+                </tr>
+                <tr style="background-color:#DDDDDD">
+                    <td>15:20 - 16:00</td>
+                    <td>Panel Discussion II</td>
+                </tr>
+                <tr style="background-color:#ffe7d3">
+                    <td>16:00 - 16:10</td>
+                    <td>Poster Session II & Coffee Break</td>
+                </tr>
+                <tr style="background-color:#DEF3FD">
+                    <td>16:10 - 16:20</td>
+                    <td>Oral Paper Presentation 1</td>
+                </tr>
+                <tr style="background-color:#DEF3FD">
+                    <td>16:20 - 16:30</td>
+                    <td>Oral Paper Presentation 2</td>
+                </tr>
+                <tr style="background-color:#DEF3FD">
+                    <td>16:30 - 16:40</td>
+                    <td>Oral Paper Presentation 3</td>
+                </tr>
+                <tr style="background-color:#DEF3FD">
+                    <td>16:40 - 16:50</td>
+                    <td>Oral Paper Presentation 4</td>
+                </tr>
+                <tr style="background-color:#DEF3FD">
+                    <td>16:50 - 17:00</td>
+                    <td>Oral Paper Presentation 5</td>
+                </tr>
+                <tr style="background-color:#ffe7d3">
+                    <td>17:00 - 17:15</td>
+                    <td>Poster Session III & Coffee Break</td>
+                </tr>
+                <tr style="background-color:#fffddb">
+                    <td>17:15 - 17:30</td>
+                    <td>Best Paper Award Presentation & Best Paper Awards</td>
+                </tr>
+                <tr style="background-color:#fffddb">
+                    <td>17:30 - 17:45</td>
+                    <td>Competition Winner Presentation & Competition Awards</td>
+                </tr>
+                <tr style="background-color:#fffddb">
+                    <td>17:45 - 18:00</td>
+                    <td>Closing Remarks, Group Picture & Networking</td>
+                </tr>
+                <tr style="background-color:#fffddb">
+                    <td>18:00 - 20:00</td>
+                    <td>Social Mixer</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</section>
+
+<section class="section" id="Invited Speakers">
+    <div class="container is-max-desktop content">
+        <h2 class="title" id="speakers">Confirmed Keynote Speakers</h2>
+
+        <br/>
+
+        <div class="card">
+            <div class="card-content">
+                <a href="https://www2.eecs.berkeley.edu/Faculty/Homepages/darrell.html" target="_blank">
+                    <div class="columns is-vcentered">
+                        <div class="column is-one-quarter">
+                            <figure class="image is-128x128">
+                                <img class="is-rounded"
+                                     src="./static/img/trevor_darrell.jpg">
+                            </figure>
+                        </div>
+                        <div class="column is-two-quarter">
+                            <p class="title is-4">Prof. Dr. Trevor Darrell</p>
+                            <p class="subtitle is-6">University of California, Berkeley, USA</p>
+                        </div>
+                        <div class="column is-one-quarter">
+                            <figure class="image is-64x64">
+                                <img
+                                        src="https://logos-world.net/wp-content/uploads/2022/02/UC-Berkeley-Symbol.png">
+                            </figure>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <br/>
+
+        <div class="card">
+            <div class="card-content">
+                <a href="https://cvg.cit.tum.de/members/cremers" target="_blank">
+                    <div class="columns is-vcentered">
+                        <div class="column is-one-quarter">
+                            <figure class="image is-128x128">
+                                <img class="is-rounded"
+                                     src="https://scholar.googleusercontent.com/citations?view_op=view_photo&user=cXQciMEAAAAJ&citpid=4">
+                            </figure>
+                        </div>
+                        <div class="column is-two-quarter">
+                            <p class="title is-4">Prof. Dr. Daniel Cremers</p>
+                            <p class="subtitle is-6">Technical University of Munich, Germany</p>
+                        </div>
+                        <div class="column is-one-quarter">
+                            <figure class="image is-128x128">
+                                <img
+                                        src="https://www.dwih-tokyo.org/files/2023/11/DWIH-Coffee-Talk_Teaserbild-954x537.jpg">
+                            </figure>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <br/>
+
+        <div class="card">
+            <div class="card-content">
+                <a href="https://scholar.google.com/citations?hl=en&user=6POeyBoAAAAJ&view_op=list_works&sortby=pubdate"
+                   target="_blank">
+                    <div class="columns is-vcentered">
+                        <div class="column is-one-quarter">
+                            <figure class="image is-128x128">
+                                <img class="is-rounded"
+                                     src="https://scholar.googleusercontent.com/citations?view_op=view_photo&user=6POeyBoAAAAJ&citpid=4">
+                            </figure>
+                        </div>
+                        <div class="column is-two-quarter">
+                            <p class="title is-4">Dr. Mingxing Tan</p>
+                            <p class="subtitle is-6">Waymo, USA</p>
+                        </div>
+                        <div class="column is-one-quarter">
+                            <figure class="image is-128x128">
+                                <img
+                                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Waymo_logo.svg/800px-Waymo_logo.svg.png">
+                            </figure>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <br/>
+
+        <div class="card">
+            <div class="card-content">
+                <a href="http://www.philkr.net/" target="_blank">
+                    <div class="columns is-vcentered">
+                        <div class="column is-one-quarter">
+                            <figure class="image is-128x128">
+                                <img class="is-rounded"
+                                     src="http://www.philkr.net/philipp_small.jpg">
+                            </figure>
+                        </div>
+                        <div class="column">
+                            <p class="title is-4">Prof. Dr. Philipp Krähenbühl</p>
+                            <p class="subtitle is-6">University of Texas at Austin, USA</p>
+                        </div>
+                        <div class="column is-one-quarter">
+                            <figure class="image is-128x128">
+                                <img
+                                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/University_of_Texas_at_Austin_logo.svg/1280px-University_of_Texas_at_Austin_logo.svg.png">
+                            </figure>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <br/>
+
+        <div class="card">
+            <div class="card-content">
+                <a href="https://people.inf.ethz.ch/pomarc/" target="_blank">
+                    <div class="columns is-vcentered">
+                        <div class="column is-one-quarter">
+                            <figure class="image is-128x128">
+                                <img class="is-rounded"
+                                     src="https://inf.ethz.ch/news-and-events/spotlights/infk-news-channel/2023/05/marc-pollefeys-elected-member-of-academia-europaea/_jcr_content/wide_content/textimage/image.imageformat.text50percent.1283082781.jpg">
+                            </figure>
+                        </div>
+                        <div class="column">
+                            <p class="title is-4">Prof. Dr. Marc Pollefeys</p>
+                            <p class="subtitle is-6">ETH Zurich, Switzerland</p>
+                        </div>
+                        <div class="column is-one-quarter">
+                            <figure class="image is-128x128">
+                                <img
+                                   src="https://logowik.com/content/uploads/images/eth-zurich1144.jpg">
+                            </figure>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <br/>
+
+        <div class="card">
+            <div class="card-content">
+                <a href="https://profiles.stanford.edu/marco-pavone" target="_blank">
+                    <div class="columns is-vcentered">
+                        <div class="column is-one-quarter">
+                            <figure class="image is-128x128">
+                                <img class="is-rounded"
+                                     src="https://profiles.stanford.edu/proxy/api/cap/profiles/46879/resources/profilephoto/350x350.1696806908518.jpg">
+                            </figure>
+                        </div>
+                        <div class="column">
+                            <p class="title is-4">Prof. Dr. Marco Pavone (tentative)</p>
+                            <p class="subtitle is-6">Stanford University & NVIDIA, USA</p>
+                        </div>
+                        <div class="column is-one-quarter">
+                            <figure class="image is-128x128">
+                                <img src="static/img/stanford_nvidia.png">
+                            </figure>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <br/>
+
+        <div class="card">
+            <div class="card-content">
+                <a href="https://pages.cs.wisc.edu/~sharonli/" target="_blank">
+                    <div class="columns is-vcentered">
+                        <div class="column is-one-quarter">
+                            <figure class="image is-128x128">
+                                <img class="is-rounded"
+                                     src="https://dou0x1vlhajjl.cloudfront.net/wp-content/uploads/sites/871/2023/07/Li-Sharon_headshot-404-x-440.jpg">
+                            </figure>
+                        </div>
+                        <div class="column">
+                            <p class="title is-4">Prof. Dr. Sharon Li</p>
+                            <p class="subtitle is-6">University of Wisconsin-Madison</p>
+                        </div>
+                        <div class="column is-one-quarter">
+                            <figure class="image is-128x128">
+                                <img
+                                        src="https://brandslogos.com/wp-content/uploads/images/large/the-university-of-wisconsin-madison-logo.png">
+                            </figure>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <br/>
+
+        <div class="card">
+            <div class="card-content">
+                <a href="http://www.3dunderstanding.org/" target="_blank">
+                    <div class="columns is-vcentered">
+                        <div class="column is-one-quarter">
+                            <figure class="image is-128x128">
+                                <img class="is-rounded"
+                                     src="https://www.3dunderstanding.org/team/00_angela_dai/picture.jpg">
+                            </figure>
+                        </div>
+                        <div class="column">
+                            <p class="title is-4">Prof. Dr. Angela Dai</p>
+                            <p class="subtitle is-6">Technical University of Munich, Germany</p>
+                        </div>
+                        <div class="column is-one-quarter">
+                            <figure class="image is-128x128">
+                                <img
+                                        src="https://www.dwih-tokyo.org/files/2023/11/DWIH-Coffee-Talk_Teaserbild-954x537.jpg">
+                            </figure>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <br/>
+
+        <div class="card">
+            <div class="card-content">
+                <a href="https://cseweb.ucsd.edu/~mkchandraker/" target="_blank">
+                    <div class="columns is-vcentered">
+                        <div class="column is-one-quarter">
+                            <figure class="image is-128x128">
+                                <img class="is-rounded"
+                                     src="http://fg2023.ieee-biometrics.org/assets/images/organizers/cropped-manmohan-chandraker.jpeg">
+                            </figure>
+                        </div>
+                        <div class="column">
+                            <p class="title is-4">Prof. Dr. Manmohan Chandraker</p>
+                            <p class="subtitle is-6">University of California San Diego, UCSD, USA</p>
+                        </div>
+                        <div class="column is-one-quarter">
+                            <figure class="image is-128x128">
+                                <img
+                                        src="https://sandiegodiplomacy.org/wp-content/uploads/2023/02/UCSD-Symbol.png">
+                            </figure>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <br/>
+
+        <div class="card">
+            <div class="card-content">
+                <a href="https://mobility-lab.seas.ucla.edu/about/" target="_blank">
+                    <div class="columns is-vcentered">
+                        <div class="column is-one-quarter">
+                            <figure class="image is-128x128">
+                                <img class="is-rounded"
+                                     src="static/img/jiaqi_ma.jpg">
+                            </figure>
+                        </div>
+                        <div class="column">
+                            <p class="title is-4">Prof. Dr. Jiaqi Ma</p>
+                            <p class="subtitle is-6">University of California Los Angeles (UCLA), USA</p>
+                        </div>
+                        <div class="column is-one-quarter">
+                            <figure class="image is-128x128">
+                                <img
+                                        src="https://network4sustainablenano.org/wp-content/uploads/2021/03/ucla-logo-transparent-blue-1.png">
+                            </figure>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <br/>
+
+        <div class="card">
+            <div class="card-content">
+                <a href="https://aroitberg.github.io/" target="_blank">
+                    <div class="columns is-vcentered">
+                        <div class="column is-one-quarter">
+                            <figure class="image is-128x128">
+                                <img class="is-rounded"
+                                     src="static/images/alina_roitberg.jpg">
+                            </figure>
+                        </div>
+                        <div class="column">
+                            <p class="title is-4">Prof. Dr. Alina Roitberg</p>
+                            <p class="subtitle is-6">University of Stuttgart, Germany</p>
+                        </div>
+                        <div class="column is-one-quarter">
+                            <figure class="image is-128x128">
+                                <img
+                                        src="https://logowik.com/content/uploads/images/universitat-stuttgart4310.logowik.com.webp">
+                            </figure>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <br/>
+
+    </div>
+</section>
+
+<section class="section" id="dates">
+    <div class="container is-max-desktop content">
+        <h2 class="title" id="paper_track">Paper Track</h2>
+        We accept novel full 8-page papers for publication in the proceedings, and either shorter
+        4-page extended abstracts or 8-page papers of novel or previously published work that will not
+        be included in the proceedings. Full papers should use the official <a
+            href="https://media.eventhosts.cc/Conferences/ICCV2025/ICCV2025-Author-Kit-Feb.zip">LaTeX</a> or <a
+            href="https://github.com/daskol/typst-templates/tree/main/cvpr">Typst</a> ICCV 2025 template.
+        For extended abstracts we recommend to use the same template.
+        <ul>
+            <li><b>Submission Portal</b>: <a href="https://openreview.net">OpenReview (TBD)</a> </li>
+            <li><s><b>Paper Submission Opens</b>: July 10, 2025</s></li>
+            <li><b>Paper Submission Deadline</b>: July 15, 2025 (23:59 PST)</li>
+            <li><b>Notification to Authors</b>: August 6, 2025</li>
+            <li><b>Camera-ready submission</b>: August 20, 2025</li>
+        </ul>
+    </div>
+</section>
+
+<section class="section" id="dates">
+    <div class="container is-max-desktop content">
+        <h2 class="title" id="paper_track">Paper Awards</h2>
+        <ul>
+            <li><b>🏆 Best Paper Award:</b> prize money (<b>$500</b> in cash) 💰</b></li>
+        </ul>
+    </div>
+</section>
+
+<section class="section" id="dates">
+    <div class="container is-max-desktop content">
+        <h2 class="title" id="challenge">Challenge</h2>
+        We host multiple challenges based on our TUM Traffic Datasets, e.g. <a href="https://tum-traffic-dataset.github.io/tumtraf-v2x/">TUMTraf V2X
+        Cooperative Perception Dataset (CVPR'24)</a> which
+        includes high-quality, real-world V2X perception data for the cooperative 3D object detection and
+        tracking task in autonomous driving.
+        The datasets are available <a
+            href="https://innovation-mobility.com/en/project-providentia/a9-dataset/#anchor_release_4">here</a>.
+        We provide a <a href="https://github.com/tum-traffic-dataset/tum-traffic-dataset-dev-kit">dataset development
+        kit</a> to work with the dataset.
+        </br></br>
+        <b>Competition Timeline:</b>
+        <ul>
+<!--            <li><b>Submission Portal (TODO)</b>: <a-->
+<!--            href="https://eval.ai/web/challenges/challenge-page/">EvalAI</a></li>-->
+<!--        <li><b>Data Instructions & Helper Scripts</b>: April 17, 2025</li>-->
+<!--        <li><b>Dev Phase Start</b>: April 17, 2025</li>-->
+<!--        <li><b>Submission Portal Start</b>: April 19, 2025</li>-->
+<!--        <li><b>Test Phase Start</b>: May 1, 2025</li>-->
+<!--        <li><b>Test Phase End</b>: June 14, 2025 (14:00 Pacific Time)</li>-->
+<!--            <li><b>Dataset Final Release</b>: December 31, 2024</li>-->
+            <li><b>Competition Announcement</b>: June 20, 2025</li>
+            <li><b>Abstract Submission Deadline</b>: July 12, 2025 (23:59 PST)</li>
+            <li><b>Paper Submission Deadline</b>: July 15, 2025 (23:59 PST)</li>
+            <li><b>Notification to Participants</b>: August 6, 2025</li>
+        </ul>
+        </br>
+        The best-performing teams will be invited to present their solutions during the workshop, and the
+        winners will receive prizes and recognition for their contributions to the field.
+    </div>
+</section>
+
+<section class="section" id="dates">
+    <div class="container is-max-desktop content">
+        <h2 class="title" id="paper_track">Challenge Awards</h2>
+        <ul>
+            <li><b>🏆 Challenge Winner Award (1st Place):</b> Gold medal & prize money (<b>$500</b> in cash) 💰</li>
+        </ul>
+    </div>
+</section>
+
+
+<section class="section" id="Organizers">
+    <div class="container is-max-desktop content">
+        <h2 class="title" id="organizers">Organizers</h2>
+
+        <div class="columns is-centered is-variable is-0">
+            <div class="column is-one-quarter">
+                <a href="http://walzimmer.github.io">
+                    <div class="card">
+                        <div class="card-image">
+                            <figure class="image">
+                                <img class="is-rounded" src="https://avatars.githubusercontent.com/u/22540236?v=4"
+                                     alt="Placeholder image">
+                            </figure>
+                        </div>
+                        <div class="card-content">
+                            <div class="media">
+                                <div class="media-content" style="overflow-x: unset;">
+                                    <p class="title is-7 is-spaced">Walter Zimmer</p>
+                                    <p class="subtitle is-7">Technical University of Munich</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="column is-one-quarter">
+                <a href="https://www.rossgreer.com/">
+                    <div class="card">
+                        <div class="card-image">
+                            <figure class="image">
+                                <img class="is-rounded"
+                                     src="https://engineering.ucmerced.edu/sites/engineering.ucmerced.edu/files/people/photos/greer_cropped_head_400400.jpg"
+                                     alt="Placeholder image">
+                            </figure>
+                        </div>
+                        <div class="card-content">
+                            <div class="media">
+                                <div class="media-content" style="overflow-x: unset;">
+                                    <p class="title is-7 is-spaced">Prof. Dr. Ross Greer</p>
+                                    <p class="subtitle is-7">Uni. of California Merced</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+
+            <div class="column is-one-quarter">
+                <a href="https://www.linkedin.com/in/max-ronecker-929b72106/">
+                    <div class="card">
+                        <div class="card-image">
+                            <figure class="image">
+                                <img class="is-rounded"
+                                     src="https://scholar.googleusercontent.com/citations?view_op=view_photo&user=AVQ6vGcAAAAJ&citpid=6"
+                                     alt="Placeholder image">
+                            </figure>
+                        </div>
+                        <div class="card-content">
+                            <div class="media">
+                                <div class="media-content" style="overflow-x: unset;">
+                                    <p class="title is-7 is-spaced">Max Ronecker</p>
+                                    <p class="subtitle is-7">Graz Uni. of Technology</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="column is-one-quarter">
+                <a href="https://scholar.google.com/citations?user=LXwEufAAAAAJ&hl=en">
+                    <div class="card">
+                        <div class="card-image">
+                            <figure class="image">
+                                <img class="is-rounded"
+                                     src="https://scholar.googleusercontent.com/citations?view_op=view_photo&user=LXwEufAAAAAJ&citpid=1"
+                                     alt="Placeholder image">
+                            </figure>
+                        </div>
+                        <div class="card-content">
+                            <div class="media">
+                                <div class="media-content" style="overflow-x: unset;">
+                                    <p class="title is-7 is-spaced">Chuheng Wei</p>
+                                    <p class="subtitle is-7">Uni. of California Riverside</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div class="columns is-centered is-variable is-0">
+
+            <div class="column is-one-quarter">
+                <a href="http://luoping.me/author/haibao-yu/">
+                    <div class="card">
+                        <div class="card-image">
+                            <figure class="image">
+                                <img class="is-rounded" src="https://coop-intelligence.github.io/haibao_yu.jpg"
+                                     alt="Placeholder image">
+                            </figure>
+                        </div>
+                        <div class="card-content">
+                            <div class="media">
+                                <div class="media-content" style="overflow-x: unset;">
+                                    <p class="title is-7 is-spaced">Haibao Yu</p>
+                                    <p class="subtitle is-7">Univ. of Hong Kong & Tsinghua Uni.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="column is-one-quarter">
+                <a href="https://rruisong.github.io/">
+                    <div class="card">
+                        <div class="card-image">
+                            <figure class="image">
+                                <img class="is-rounded"
+                                     src="https://i1.rgstatic.net/ii/profile.image/1160239365795840-1653634029979_Q512/Rui-Song-47.jpg"
+                                     alt="Placeholder image">
+                            </figure>
+                        </div>
+                        <div class="card-content">
+                            <div class="media">
+                                <div class="media-content" style="overflow-x: unset;">
+                                    <p class="title is-7 is-spaced">Rui Song</p>
+                                    <p class="subtitle is-7">TUM & Fraunhofer IVI</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="column is-one-quarter">
+                <a href="https://www.ce.cit.tum.de/air/people/xingcheng-zhou-msc/">
+                    <div class="card">
+                        <div class="card-image">
+                            <figure class="image">
+                                <img class="is-rounded" src="static/img/xingcheng.jpeg"
+                                     alt="Placeholder image">
+                            </figure>
+                        </div>
+                        <div class="card-content">
+                            <div class="media">
+                                <div class="media-content" style="overflow-x: unset;">
+                                    <p class="title is-7 is-spaced">Xingcheng Zhou</p>
+                                    <p class="subtitle is-7">Technical Uni. of Munich</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="column is-one-quarter">
+                <a href="https://www.ce.cit.tum.de/air/people/jiajie-zhang-msc/">
+                    <div class="card">
+                        <div class="card-image">
+                            <figure class="image">
+                                <img class="is-rounded" src="static/img/jiajie_zhang.png"
+                                     alt="Placeholder image">
+                            </figure>
+                        </div>
+                        <div class="card-content">
+                            <div class="media">
+                                <div class="media-content" style="overflow-x: unset;">
+                                    <p class="title is-7 is-spaced">Jiajie Zhang</p>
+                                    <p class="subtitle is-7">Technical Uni. of Munich</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+
+        </div>
+        <div class="columns is-centered is-variable is-0">
+            <div class="column is-one-quarter">
+                <a href="https://akshaygopalkr.github.io/">
+                    <div class="card">
+                        <div class="card-image">
+                            <figure class="image">
+                                <img class="is-rounded"
+                                     src="./static/img/akshay_gopalkrishnan.png"
+                                     alt="Placeholder image">
+                            </figure>
+                        </div>
+                        <div class="card-content">
+                            <div class="media">
+                                <div class="media-content" style="overflow-x: unset;">
+                                    <p class="title is-7 is-spaced">Akshay Gopalkrishnan</p>
+                                    <p class="subtitle is-7">Uni. of California San Diego</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="column is-one-quarter">
+                <a href="https://www.sydney.edu.au/engineering/about/our-people/academic-staff/stephany-berrioperez.html">
+                    <div class="card">
+                        <div class="card-image">
+                            <figure class="image">
+                                <img class="is-rounded"
+                                     src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9fiiufEFH8tuZiG1IQqV80eOYVeUhuvpM4A&s"
+                                     alt="Placeholder image">
+                            </figure>
+                        </div>
+                        <div class="card-content">
+                            <div class="media">
+                                <div class="media-content" style="overflow-x: unset;">
+                                    <p class="title is-7 is-spaced">Dr. Stephany Berrio Perez</p>
+                                    <p class="subtitle is-7">Uni. of Sydney</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="column is-one-quarter">
+                <a href="https://zewei-zhou.github.io/">
+                    <div class="card">
+                        <div class="card-image">
+                            <figure class="image">
+                                <img class="is-rounded"
+                                     src="./static/img/zewei_zhou.jpg"
+                                     alt="Placeholder image">
+                            </figure>
+                        </div>
+                        <div class="card-content">
+                            <div class="media">
+                                <div class="media-content" style="overflow-x: unset;">
+                                    <p class="title is-7 is-spaced">Zewei Zhou</p>
+                                    <p class="subtitle is-7">Uni. of California Los Angeles</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="column is-one-quarter">
+                <a href="https://www.tianhui-vicky.com/">
+                    <div class="card">
+                        <div class="card-image">
+                            <figure class="image">
+                                <img class="is-rounded"
+                                     src="./static/img/tianhui_cai.jpg"
+                                     alt="Placeholder image">
+                            </figure>
+                        </div>
+                        <div class="card-content">
+                            <div class="media">
+                                <div class="media-content" style="overflow-x: unset;">
+                                    <p class="title is-7 is-spaced">Tianhui Cai</p>
+                                    <p class="subtitle is-7">Uni. of California Los Angeles</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+
+        </div>
+        <div class="columns is-centered is-variable is-0">
+
+
+            <div class="column is-one-quarter">
+                <a href="https://bmmliu.github.io">
+                    <div class="card">
+                        <div class="card-image">
+                            <figure class="image">
+                                <img class="is-rounded"
+                                     src="https://dliva-workshop.github.io/assets/img/yifan_liu.jpg"
+                                     alt="Placeholder image">
+                            </figure>
+                        </div>
+                        <div class="card-content">
+                            <div class="media">
+                                <div class="media-content" style="overflow-x: unset;">
+                                    <p class="title is-7 is-spaced">Yifan Liu</p>
+                                    <p class="subtitle is-7">Uni. of California Los Angeles</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="column is-one-quarter">
+                <a href="https://haox1228.github.io/">
+                    <div class="card">
+                        <div class="card-image">
+                            <figure class="image">
+                                <img class="is-rounded"
+                                     src="https://dliva-workshop.github.io/assets/img/haoxuan_ma.jpg"
+                                     alt="Placeholder image">
+                            </figure>
+                        </div>
+                        <div class="card-content">
+                            <div class="media">
+                                <div class="media-content" style="overflow-x: unset;">
+                                    <p class="title is-7 is-spaced">Haoxuan Ma</p>
+                                    <p class="subtitle is-7">Uni. of California Los Angeles</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="column is-one-quarter">
+                <a href="https://www.linkedin.com/in/arpita-v-0a14a422/">
+                    <div class="card">
+                        <div class="card-image">
+                            <figure class="image">
+                                <img class="is-rounded" src="static/img/arpita_vats.png"
+                                     alt="Placeholder image">
+                            </figure>
+                        </div>
+                        <div class="card-content">
+                            <div class="media">
+                                <div class="media-content" style="overflow-x: unset;">
+                                    <p class="title is-7 is-spaced">Dr. Arpita Vats</p>
+                                    <p class="subtitle is-7">LinkedIn</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="column is-one-quarter">
+                <a href="https://it-caesar.de">
+                    <div class="card">
+                        <div class="card-image">
+                            <figure class="image">
+                                <img class="is-rounded" src="static/img/holger_caesar.jpg"
+                                     alt="Placeholder image">
+                            </figure>
+                        </div>
+                        <div class="card-content">
+                            <div class="media">
+                                <div class="media-content" style="overflow-x: unset;">
+                                    <p class="title is-7 is-spaced">Prof. Dr. Holger Caesar</p>
+                                    <p class="subtitle is-7">Technical Uni. of Delft</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+        </div>
+
+        <div class="columns is-centered is-variable is-0">
+            <div class="column is-one-quarter">
+                <a href="https://aroitberg.github.io/">
+                    <div class="card">
+                        <div class="card-image">
+                            <figure class="image">
+                                <img class="is-rounded"
+                                     src="https://www.f05.uni-stuttgart.de/informatik/img/personen/alinaroitberg_wbg.png?__scale=w:220,h:220,cx:0,cy:0,cw:220,ch:220"
+                                     alt="Placeholder image">
+                            </figure>
+                        </div>
+                        <div class="card-content">
+                            <div class="media">
+                                <div class="media-content" style="overflow-x: unset;">
+                                    <p class="title is-7 is-spaced">Prof. Dr.-Ing. Alina Roitberg</p>
+                                    <p class="subtitle is-7">Uni. of Stuttgart</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="column is-one-quarter">
+                <a href="https://graz.elsevierpure.com/en/persons/daniel-watzenig">
+                    <div class="card">
+                        <div class="card-image">
+                            <figure class="image">
+                                <img class="is-rounded" src="./static/img/daniel_watzenig.jpg" alt="Placeholder image">
+                            </figure>
+                        </div>
+                        <div class="card-content">
+                            <div class="media">
+                                <div class="media-content" style="overflow-x: unset;">
+                                    <p class="title is-7 is-spaced">Prof. Dr.techn. Daniel Watzenig</p>
+                                    <p class="subtitle is-7">Graz Uni. of Technology</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="column is-one-quarter">
+                <a href="https://scholar.google.com/citations?user=LkONrRAAAAAJ&hl=en">
+                    <div class="card">
+                        <div class="card-image">
+                            <figure class="image">
+                                <img class="is-rounded" src="./static/img/mohan_trivedi.png" alt="Placeholder image">
+                            </figure>
+                        </div>
+                        <div class="card-content">
+                            <div class="media">
+                                <div class="media-content" style="overflow-x: unset;">
+                                    <p class="title is-7 is-spaced">Prof. Dr. Mohan M. Trivedi</p>
+                                    <p class="subtitle is-7">Uni. of California San Diego</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="column is-one-quarter">
+                <a href="https://www.ce.cit.tum.de/air/people/prof-dr-ing-habil-alois-knoll/">
+                    <div class="card">
+                        <div class="card-image">
+                            <figure class="image">
+                                <img class="is-rounded"
+                                     src="https://how-to-business.handelsblatt.com/wp-content/uploads/2023/02/knoll.png"
+                                     alt="Placeholder image">
+                            </figure>
+                        </div>
+                        <div class="card-content">
+                            <div class="media">
+                                <div class="media-content" style="overflow-x: unset;">
+                                    <p class="title is-7 is-spaced">Prof. Dr.-Ing. habil. Alois C. Knoll</p>
+                                    <p class="subtitle is-7">Technical Uni. of Munich</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="section" id="PC">
+    <div class="container is-max-desktop content">
+        <h2 class="title" id="PC">Invited Program Committee</h2>
+        <div class="pc-members">
+            <div class="member">
+                <a href="https://profiles.ucr.edu/app/home/profile/barth" target="_blank">Prof. Dr. Matthew Barth</a>
+                <p>UCR</p>
+            </div>
+            <div class="member">
+                <a href="https://see-en.tongji.edu.cn/about_Us/Departments/Sino_German_Research_Center_for_Intelligent_Scie/Contact_Us_.htm" target="_blank">Prof. Dr. Huilin Yin</a>
+                <p>Tongji Uni.</p>
+            </div>
+            <div class="member">
+                <a href="https://ziranw.github.io/" target="_blank">Prof. Dr. Ziran Wang</a>
+                <p>Purdue Uni.</p>
+            </div>
+            <div class="member">
+                <a href="https://www-lmd.ist.hokudai.ac.jp/member/guang-li/" target="_blank">Prof. Dr. Guang Li</a>
+                <p>Hokkaido University</p>
+            </div>
+            <div class="member">
+                <a href="https://profiles.ucr.edu/app/home/profile/kanokb" target="_blank">Prof. Dr. Kanok Boriboonsomsin</a>
+                <p>UCR</p>
+            </div>
+            <div class="member">
+                <a href="https://www.cs.cit.tum.de/camp/members/senior-research-scientists/federico-tombari/" target="_blank">PD. Dr. habil. Federico Tombari</a>
+                <p>Google</p>
+            </div>
+            <div class="member">
+                <a href="https://hangqiu.github.io/" target="_blank">Prof. Dr. Hang Qiu</a>
+                <p>UCR</p>
+            </div>
+            <div class="member">
+                <a href="https://jiachenli94.github.io/" target="_blank">Prof. Dr. Jiachen Li</a>
+                <p>UCR</p>
+            </div>
+            <div class="member">
+                <a href="https://vztu.github.io/" target="_blank">Prof. Dr. Zhengzhong Tu</a>
+                <p>TAMU</p>
+            </div>
+            <div class="member">
+                <a href="https://www.linkedin.com/in/christophpilz/?original_referer=https%3A%2F%2Fwww%2Egoogle%2Ecom%2F&originalSubdomain=at" target="_blank">Dr. Christoph Pilz</a>
+                <p>Virtual Vehicle</p>
+            </div>
+            <div class="member">
+                <a href="https://www.linkedin.com/in/markusschratter?originalSubdomain=at" target="_blank">Dr. Markus Schratter</a>
+                <p>Virtual Vehicle</p>
+            </div>
+            <div class="member">
+                <a href="https://www.xiangbogao.com/" target="_blank">Xiangbo Gao</a>
+                <p>TAMU</p>
+            </div>
+            <div class="member">
+                <a href="https://www.linkedin.com/in/felix-neumann-7993b0167/?original_referer=https%3A%2F%2Fwww%2Egoogle%2Ecom%2F&originalSubdomain=de" target="_blank">Felix Neumann</a>
+                <p>Siemens</p>
+            </div>
+            <div class="member">
+                <a href="https://online.tugraz.at/tug_online/visitenkarte.show_vcard?pPersonenGruppe=3&pPersonenId=BDB643F60C7AC4A1" target="_blank">Kenan Ahmic</a>
+                <p>Graz Uni. of Tech.</p>
+            </div>
+            <div class="member">
+                <a href="https://vveicao.github.io/" target="_blank">Wei Cao</a>
+                <p>Bosch</p>
+            </div>
+            <div class="member">
+                <a href="https://www.linkedin.com/in/markusgross42/?originalSubdomain=de" target="_blank">Markus Gross</a>
+                <p>Fraunhofer IVI & TUM</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<style>
+    .pc-members {
+        display: flex;
+        justify-content: space-between; 
+        flex-wrap: wrap; 
+        gap: 20px; 
+        text-align: center;
+    }
+    
+    .member {
+        flex: 1; 
+        min-width: 150px; 
+    }
+    
+    .member p {
+        margin: 5px 0 0;
+        font-size: 14px;
+        color: gray;
+    }
+</style>
+
+
+
+<section class="section" id="Sponsors">
+    <div class="container is-max-desktop content">
+        <h2 class="title" id="sponsors">Sponsors</h2>
+        We are currently seeking for further sponsorship opportunities and would be delighted to discuss potential
+        collaborations. Interested parties are kindly requested to contact us via email at walter.zimmer@cs.tum.edu for
+        further details.
+    </div>
+</section>
+
+<section class="hero">
+    <div class="hero-body" style="background-color: #212529;">
+        <div class="content" align="center">
+            <img src="https://iccv.thecvf.com/static/core/img/iccv-navbar-logo.svg" style="height: 100px;"/>
+        </div>
+    </div>
+</section>
+
+</body>
+<script src="js/jquery-2.1.1.js"></script>
+<script src="js/jquery.mobile.custom.min.js"></script>
+<script src="js/main.js"></script>
+
+</html>
